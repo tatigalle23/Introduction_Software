@@ -1,0 +1,10 @@
+word1= input()
+word2= input()
+word3= input()
+num1= input()
+num2= input()
+num3= input()
+numT= float(num1)+float(num2)+float(num3)
+
+print (word1+word2+word3)
+print (str(numT))
