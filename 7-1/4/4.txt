@@ -1,0 +1,6 @@
+1 byte= 8 bits
+4 byte= 32 bits
+
+So we have 2^32 different types of combinatios
+
+which means we have from 0 to 4,294,967,395 or in case the negative numbers are included -2,147,483,648 to 2,147,483,647

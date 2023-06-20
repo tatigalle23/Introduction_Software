@@ -1,0 +1,12 @@
+Error:
+Line 61: heap-buffer-overflow for (i = 1; i <= 3; i++)
+Line 67: heap-use-after-free  printf("%lf ", doubleArr[i])
+Line 74: double-free free(charArr1); free(charArr2); free(charArr3);
+
+해결:
+-Line 61: <=으로 < 바뀌었습니다.
+
+-Line 67: Line 58에 있는 double* doubleArr = (double*)allocatePtr(sizeof(double) * arrLen); 파트는 
+Line 65 for위에 바쒸었습니다.
+
+-Line 74: 다 free 는 NULL으로 바뀌었습니다.
